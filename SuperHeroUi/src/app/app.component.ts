@@ -18,7 +18,6 @@ export class AppComponent {
     this.superHeroService
       .getSuperHeroes()
       .subscribe((result: SuperHero[]) => this.heroes = result);
-    console.log(this.heroes);
   }
 
   initNewHero() {
